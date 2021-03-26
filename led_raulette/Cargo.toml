@@ -1,10 +1,19 @@
 [package]
-name = "led_raulette"
-version = "0.1.0"
+name = "aux5"
+version = "0.2.0"
 authors = ["Dheerajknoldus <dheeraj.mishra@knoldus.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-aux5 = { path = "auxiliary" }
+cortex-m = "0.6.4"
+cortex-m-rt = "0.6.13"
+stm32f3-discovery = "0.6.0"
+panic-halt = "0.2.0"
+panic-itm = "0.4.2"
+[[bin]]
+name = "main"
+path = "main/src/main.rs"
+
+

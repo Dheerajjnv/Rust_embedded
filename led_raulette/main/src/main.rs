@@ -2,7 +2,7 @@
 #![no_main]
 #![no_std]
 
-use aux5::entry;
+//use aux5::entry;
 
 #[entry]
 fn main() -> ! {
